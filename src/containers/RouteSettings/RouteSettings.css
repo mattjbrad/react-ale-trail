@@ -4,3 +4,8 @@
     padding:15px;
     color:#FFFFC7;
 }
+
+.RouteSettings button{
+    background-color: #b0413e;
+    border-color:#58201f;
+}

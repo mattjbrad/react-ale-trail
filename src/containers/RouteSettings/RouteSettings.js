@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Direction from '../../components/Direction/Direction';
 import Pubs from '../../components/Pubs/Pubs';
 import classes from './RouteSettings.css';
+import Button from 'react-bootstrap';
 
 class RouteSettings extends Component {
 
@@ -40,7 +41,7 @@ class RouteSettings extends Component {
             <div className={classes.RouteSettings}>
                 <Direction changed={this.changeDirectionHandler} direction={this.state.direction}/>
                 <Pubs changed={this.togglePubHandler} stops={this.state.stops}/>
-                <button type="submit">Submit</button>
+                <button className={['btn', 'btn-primary'].join(' ')} type="submit">Submit</button>
             </div>
         )
     }
