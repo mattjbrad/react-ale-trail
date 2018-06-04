@@ -2,6 +2,11 @@
   text-align: center;
   font-family: 'Cabin', sans-serif;
   font-size:1.2em;
+  color:#FFFFC7;
+}
+
+body{
+  background:#436b6c;
 }
 
 .App-logo {

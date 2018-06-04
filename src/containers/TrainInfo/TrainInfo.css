@@ -1,0 +1,9 @@
+.TrainInfo{
+    padding:20px;
+}
+
+.TrainInfo h4 {
+    color:#fcaa67;
+    margin:20px auto;
+    font-size:200%;
+}

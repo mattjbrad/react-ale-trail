@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import Direction from '../../components/Direction/Direction';
 import Pubs from '../../components/Pubs/Pubs';
 import classes from './RouteSettings.css';
-import Button from 'react-bootstrap';
 
 class RouteSettings extends Component {
 
