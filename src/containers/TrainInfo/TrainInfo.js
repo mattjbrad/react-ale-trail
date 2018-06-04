@@ -15,8 +15,10 @@ class TrainInfo extends Component {
     };
 
     render () {
-
+        return(
+            <p>This is the train bit</p>
+        )
     }
 }
 
-export default RouteSettings;
+export default TrainInfo;
