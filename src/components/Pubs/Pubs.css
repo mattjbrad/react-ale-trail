@@ -1,0 +1,19 @@
+.Pubs h4 {
+    margin-bottom:20px;
+    color: #fcaa67;
+    margin-top:30px;
+    font-size:250%;
+}
+
+.Pubs div div{
+    display:inline-flex;
+    margin: 10px 10px;
+}
+
+.Pubs div div label{
+    margin-right:5px;
+}
+.Pubs div div input{
+    margin-top: 5px;
+    margin-left:5px;
+}

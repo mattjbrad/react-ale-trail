@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Direction from '../../components/Direction/Direction';
 import Pubs from '../../components/Pubs/Pubs';
+import classes from './RouteSettings.css';
 
 class RouteSettings extends Component {
 
@@ -36,7 +37,7 @@ class RouteSettings extends Component {
 
     render () {
         return (
-            <div>
+            <div className={classes.RouteSettings}>
                 <Direction changed={this.changeDirectionHandler} direction={this.state.direction}/>
                 <Pubs changed={this.togglePubHandler} stops={this.state.stops}/>
                 <button type="submit">Submit</button>
