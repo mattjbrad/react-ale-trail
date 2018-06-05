@@ -8,9 +8,11 @@ const trains = (props) => {
         return <Train time={train.time} platform={train.platform} delay={train.delay} key={index}/>
     });
   return (
-    <React.Fragment>
-        {trains}
-    </React.Fragment>
+    <div className='container'>
+        <div className='row'>
+            {trains}
+        </div>
+    </div>
   )
 }
 

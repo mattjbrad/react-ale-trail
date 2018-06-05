@@ -6,15 +6,18 @@ const train = (props) => {
     let delay;
 
     if (props.delay !== props.time) {
-        delay = <p>The train is delayed and is now scheduled at {props.delay};</p>
+        delay = <p style={{color:'#b75451', fontSize:'1.2em'}}>Delayed to {props.delay}</p>
     } else {
         delay = <p>Runinng on time</p>
     }
 
   return (
-    <div className={classes.Train}>
-        <p>Train is scheduled to depart at {props.time}, on platform {props.platform}.</p>
-        {delay}
+    <div className={'col-md-4'}>
+        <div className={classes.Train}>
+            <p>Due to leave at {props.time}, on platform {props.platform}.</p>
+            {delay}
+            <p>Countdown!!!!</p>
+        </div>
     </div>
   )
 }

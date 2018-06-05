@@ -20,7 +20,7 @@ class TrainInfo extends Component {
         },
         {
             time: '14:00',
-            plarform: '3',
+            platform: '3',
             delay: '14:00'
         }]
     };
