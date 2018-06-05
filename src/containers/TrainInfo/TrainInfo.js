@@ -6,8 +6,19 @@ import classes from './TrainInfo.css';
 
 class TrainInfo extends Component {
 
+    stationLookup = {
+        'syb' : 'Staylybridge',
+        'gnf' : 'Greenfield',
+        'msn' : 'Marsden',
+        'swt' : "Slaithwaite",
+        'hud' : 'Huddersfield',
+        'mir' : 'Mirfield',
+        'dew' : 'Dewsbury',
+        'btl' : 'Batley'
+    };                   
+
     state = {
-        currentStop: 'SYB',
+        currentStop: 'syb',
         trains:[{
             time: '12:00',
             platform: '1',
@@ -25,10 +36,15 @@ class TrainInfo extends Component {
         }]
     };
 
+    stopChangeHandler = (event) => {
+        console.log(event.target.value);
+        this.setState({currentStop:event.target.value});
+    }
+
     render () {
         return(
             <div className={classes.TrainInfo}>
-                <CurrentStation current={this.state.currentStop}/>
+                <CurrentStation change={this.stopChangeHandler} current={this.stationLookup[this.state.currentStop]}/>
                 <h4>Train choices</h4>
                 <Trains trains={this.state.trains} />
             </div>
